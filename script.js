@@ -1,5 +1,5 @@
 const products = [
-  {id:1,name:"فنجان سرامیکی مینیمال",category:"فنجان و لیوان",price:185000,image:"photo_30945318560_x.jfif",emoji:"☕",tone:1},
+  {id:1,name:"فنجان سرامیکی مینیمال",category:"فنجان و لیوان",price:185000,image:"photo_30945318560_x.jfif",tone:1},
   {id:2,name:"ست لیوان شیشه‌ای",category:"فنجان و لیوان",price:240000,emoji:"🥛",tone:2},
   {id:3,name:"دیس پذیرایی سرامیکی",category:"ظروف پذیرایی",price:390000,emoji:"🍽️",tone:3},
   {id:4,name:"استند چوبی چندمنظوره",category:"استند چوبی",price:320000,emoji:"🪵",tone:5},
