@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f2">
+  <meta name="description" content="هوم‌زی؛ انتخابی ساده و زیبا برای خانه شما">
+  <title>هوم‌زی | فروشگاه لوازم خانه و هدیه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-note">ارسال سفارش‌ها به سراسر کشور · تجربه‌ای ساده برای خرید هدیه و خانه</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="صفحه اصلی هوم‌زی">
+      <span class="brand-mark">h</span>
+      <span><strong>homezee</strong><small>خانه‌ای برای سلیقه‌ی تو</small></span>
+    </a>
+    <nav class="main-nav" aria-label="منوی اصلی">
+      <a href="#products">محصولات</a>
+      <a href="#categories">دسته‌بندی‌ها</a>
+      <a href="#about">درباره ما</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="جست‌وجوی محصول..." aria-label="جست‌وجوی محصول">
+      </label>
+      <button class="cart-button" id="cartButton" type="button" aria-label="سبد خرید">
+        <span aria-hidden="true">▢</span><span class="cart-label">سبد خرید</span><b id="cartCount">۰</b>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="باز کردن منو">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">HOME, WITH A LITTLE JOY</span>
+        <h1>جزئیات کوچک،<br><em>حال خوبِ خانه</em></h1>
+        <p>از فنجان صبحگاهی تا هدیه‌ای برای عزیزانت؛ چیزهایی ساده و دوست‌داشتنی برای زیباتر کردن روزمرگی.</p>
+        <a class="primary-button" href="#products">دیدن محصولات <span aria-hidden="true">←</span></a>
+      </div>
+      <div class="hero-art" aria-label="تصویرسازی فنجان و گلدان">
+        <div class="sun"></div>
+        <div class="art-card art-card-one"><span>☕</span><small>slow mornings</small></div>
+        <div class="art-card art-card-two"><span>✿</span></div>
+        <div class="art-caption">little things<br>make a home</div>
+      </div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-heading">
+        <div><span class="eyebrow">BROWSE BY CATEGORY</span><h2>دسته‌بندی محصولات</h2></div>
+        <p>چیزی که دنبالش هستی، همین‌جاست.</p>
+      </div>
+      <div class="category-list" id="categoryList">
+        <button class="category-chip active" data-category="همه">همه محصولات</button>
+        <button class="category-chip" data-category="فنجان و لیوان">فنجان و لیوان</button>
+        <button class="category-chip" data-category="ظروف پذیرایی">ظروف پذیرایی</button>
+        <button class="category-chip" data-category="استند چوبی">استند چوبی</button>
+        <button class="category-chip" data-category="ماگ و تراول">ماگ و تراول</button>
+        <button class="category-chip" data-category="هدیه و دکور">هدیه و دکور</button>
+      </div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading product-heading">
+        <div><span class="eyebrow">THE HOMEZEE EDIT</span><h2>منتخب‌های هوم‌زی</h2></div>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>محصولی با این مشخصات پیدا نشد.</div>
+    </section>
+
+    <section class="about-strip" id="about">
+      <div class="about-icon">✦</div>
+      <div><span class="eyebrow">A LITTLE MORE ABOUT US</span><h2>برای خانه، برای هدیه، برای لبخند</h2>
+      <p>در هوم‌زی تلاش می‌کنیم انتخاب وسایل کاربردی و زیبا را ساده‌تر کنیم.</p></div>
+      <a href="#products">گشت‌وگذار در فروشگاه ←</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">h</span><span><strong>homezee</strong><small>خانه‌ای برای سلیقه‌ی تو</small></span></a>
+    <p>© هوم‌زی — تمامی حقوق محفوظ است.</p>
+    <a href="https://eitaa.com/khalilabadkitchen1" target="_blank" rel="noopener">ارتباط با ما در ایتا ↗</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="سبد خرید" aria-hidden="true">
+    <div class="cart-head"><h3>سبد خرید</h3><button id="closeCart" aria-label="بستن">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="cart-empty">سبد خرید شما خالی است.</p></div>
+    <div class="cart-foot"><span>تعداد کالاها</span><strong id="cartTotal">۰</strong><small>این نسخه نمایشی است؛ ثبت سفارش و پرداخت آنلاین هنوز فعال نشده است.</small></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
